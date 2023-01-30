@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Itim", cursive;
+    color: white;
+}
+
+#conteudoGeral, #root{
+    height: 100%;
+}
+
+/* css do menu */
+
+.menuContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.menuTitulo{
+    text-align: center;
+}
+
+.menuBtns{
+    display: flex;
+    padding-top: 32px;
+    gap: 19px;
+}
+
+.btn{
+    background-color: darkblue;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 19px;
+    border: 0.2px solid #000000;
+}
+
+.btn:hover{
+    background-color: rgba(119, 176, 250, 0.699);
+    font-size: 18px;
+}
+
+.tituloBemVindo{
+    font-size: 40px;
+}
+
+.subTituloBemVindo{
+    padding-top: 10px;
+}
+
+
+ .fundoTicTacToe{
+    position: fixed;
+    background-color: #355764;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+ }
+
+ #exitBtn{
+    border: none;
+    margin: 0px;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    top: 2px;
+    left: 4px;
+    position: fixed;
+ }
+
+ #imgBtn{
+    height: 40px;
+ }
+
+ .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 0.30s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+/* css do Tic-Tac-Toe */
+
+:root{
+    --winningBlocks: #386435;
+}
+
+body {
+    font-size: 100%;
+    background-color: #355764;
+    height: 100vh;
+}
+
+#tituloJogo {
+    padding-bottom: 26px;
+    font-size: 47px;
+}
+
+.conteudoTela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.placarJogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.placarX {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    gap: 40px;
+}
+
+.placarO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    gap: 40px;
+}
+
+
+#controladorTurn {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.tabuleiroJogo {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.tabuleiroJogoBox {
+    display: flex;
+    border-bottom: 0.8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 0px solid white;
+    cursor: pointer;
+    min-width: 100px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.endGame{
+    display: none;
+    background-color: #355764c9;
+    position: absolute;
+    flex-direction: column;
+    font-size: 29px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap:20px;
+}
+
+.showEndGame{
+    display: flex;
+}
+
+#buttonTryAgain{
+    background: rgba(0, 0, 0, 0.712);
+    border: 0px solid white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.tabuleiroJogoBox:hover{
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+.botao {
+    background: rgba(0, 0, 0, 0.3);
+    border: 0px solid white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botao:hover, #buttonTryAgain:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+
+.tabuleiroDamas{
+    display: grid;
+}
+
+.tabuleiroDamasCaixa{
+    position: fixed;
+}
